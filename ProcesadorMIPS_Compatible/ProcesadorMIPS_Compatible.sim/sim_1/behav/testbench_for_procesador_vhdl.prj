@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../Sources/BancoRegistros.vhd"
+vhdl xil_defaultlib  "../../../Sources/memory.vhd"
+vhdl xil_defaultlib  "../../../Sources/processor.vhd"
+vhdl xil_defaultlib  "../../../Sources/processor_tb.vhd"
+
+# Do not sort compile order
+nosort

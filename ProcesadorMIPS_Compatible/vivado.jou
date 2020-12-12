@@ -1,0 +1,113 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue May 31 15:35:42 2016
+# Process ID: 13832
+# Current directory: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9048 C:\Users\Juli\Downloads\ProcesadorMIPS_Compatible\ProcesadorMIPS_Compatible\ProcesadorMIPS_Compatible.xpr
+# Log file: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/vivado.log
+# Journal file: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top BancoRegistros_TB_vhd [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source BancoRegistros_TB_vhd.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top testbench_for_procesador [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+source testbench_for_procesador.tcl
+add_wave {{/processor_tb/UUT/BR/reg_wr}} {{/processor_tb/UUT/BR/data_wr}} {{/processor_tb/UUT/BR/data1_rd}} {{/processor_tb/UUT/BR/data2_rd}} {{/processor_tb/UUT/BR/regs}} 
+close_sim
+launch_simulation
+source testbench_for_procesador.tcl
+add_wave {{/processor_tb/UUT/BR/reg1_rd}} {{/processor_tb/UUT/BR/reg2_rd}} {{/processor_tb/UUT/BR/reg_wr}} {{/processor_tb/UUT/BR/data_wr}} {{/processor_tb/UUT/BR/data1_rd}} {{/processor_tb/UUT/BR/data2_rd}} {{/processor_tb/UUT/BR/regs}} 
+add_wave {{/processor_tb/UUT/Reg_ID_EX_Data1}} {{/processor_tb/UUT/Reg_ID_EX_Data2}} {{/processor_tb/UUT/Reg_ID_EX_Control_CodAlu}} {{/processor_tb/UUT/ALU_Control_Out}} {{/processor_tb/UUT/ALU_Data_1}} {{/processor_tb/UUT/ALU_Data_2}} {{/processor_tb/UUT/ALU_Result}} 
+restart
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+restart
+run 1 us
+run 1 us
+close_sim
+launch_simulation
+source testbench_for_procesador.tcl
+add_wave {{/processor_tb/UUT/BR/reg1_rd}} {{/processor_tb/UUT/BR/reg2_rd}} {{/processor_tb/UUT/BR/reg_wr}} {{/processor_tb/UUT/BR/data_wr}} {{/processor_tb/UUT/BR/data1_rd}} {{/processor_tb/UUT/BR/data2_rd}} {{/processor_tb/UUT/BR/regs}} 
+add_wave {{/processor_tb/UUT/Reg_ID_EX_Data1}} {{/processor_tb/UUT/Reg_ID_EX_Data2}} {{/processor_tb/UUT/ALU_Control_Out}} {{/processor_tb/UUT/ALU_Data_1}} {{/processor_tb/UUT/ALU_Data_2}} {{/processor_tb/UUT/ALU_Result}} {{/processor_tb/UUT/Flag_Zero}} 
+add_wave {{/processor_tb/UUT/Reg_MEM_WB_MemReg}} 
+restart
+run 1 us
+run 1 us
+close_sim
+launch_simulation
+source testbench_for_procesador.tcl
+add_wave {{/processor_tb/UUT/BR/reg1_rd}} {{/processor_tb/UUT/BR/reg2_rd}} {{/processor_tb/UUT/BR/reg_wr}} {{/processor_tb/UUT/BR/data_wr}} {{/processor_tb/UUT/BR/data1_rd}} {{/processor_tb/UUT/BR/data2_rd}} {{/processor_tb/UUT/BR/regs}} 
+add_wave {{/processor_tb/UUT/Reg_ID_EX_Data1}} {{/processor_tb/UUT/Reg_ID_EX_Data2}} {{/processor_tb/UUT/Shift_Control}} {{/processor_tb/UUT/ALU_Control_Out}} {{/processor_tb/UUT/ALU_Data_1}} {{/processor_tb/UUT/ALU_Data_2}} {{/processor_tb/UUT/Dato_Extended_Shift}} {{/processor_tb/UUT/ALU_Result}} {{/processor_tb/UUT/Control_Shift}} {{/processor_tb/UUT/Shift_Amount}} 
+run all
+run 1 us
+run 1 us
+run 1 us
+restart
+run 1 us
+run 1 us
+close_sim
+launch_simulation
+source testbench_for_procesador.tcl
+restart
+run 1 us
+run 1 us
+close_sim
+launch_simulation
+source testbench_for_procesador.tcl
+restart
+run 1 us
+close_sim
+launch_simulation
+source testbench_for_procesador.tcl
+restart
+run 1 us
+run 1 us
+close_sim
+launch_simulation
+source testbench_for_procesador.tcl
+close_sim
+launch_simulation
+source testbench_for_procesador.tcl
+restart
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+close_sim

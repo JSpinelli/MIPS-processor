@@ -1,0 +1,1070 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Tue May 31 15:35:42 2016
+# Process ID: 13832
+# Current directory: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9048 C:\Users\Juli\Downloads\ProcesadorMIPS_Compatible\ProcesadorMIPS_Compatible\ProcesadorMIPS_Compatible.xpr
+# Log file: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/vivado.log
+# Journal file: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/LabIII-VDI9/Downloads/ProcesadorMIPS_Compatible' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'ProcesadorMIPS_Compatible.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 678.582 ; gain = 75.043
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+set_property top BancoRegistros_TB_vhd [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'BancoRegistros_TB_vhd' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj BancoRegistros_TB_vhd_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/TB_BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros_TB_vhd
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot BancoRegistros_TB_vhd_behav xil_defaultlib.BancoRegistros_TB_vhd -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.BancoRegistros [bancoregistros_default]
+Compiling architecture behavior of entity xil_defaultlib.bancoregistros_tb_vhd
+Built simulation snapshot BancoRegistros_TB_vhd_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/xsim.dir/BancoRegistros_TB_vhd_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 31 15:41:38 2016...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 705.852 ; gain = 1.559
+INFO: [USF-XSim-69] 'elaborate' step finished in '11' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "BancoRegistros_TB_vhd_behav -key {Behavioral:sim_1:Functional:BancoRegistros_TB_vhd} -tclbatch {BancoRegistros_TB_vhd.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source BancoRegistros_TB_vhd.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+Note: PRUEBA REGISTRO
+Time: 0 ps  Iteration: 0  Process: /BancoRegistros_TB_vhd/line__60  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/TB_BancoRegistros.vhd
+Note: PRUEBA ESCRITURA y LECTURA REG 2 (DATA 1)
+Time: 10100 ps  Iteration: 0  Process: /BancoRegistros_TB_vhd/line__60  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/TB_BancoRegistros.vhd
+Note: PRUEBA RESET
+Time: 20200 ps  Iteration: 0  Process: /BancoRegistros_TB_vhd/line__60  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/TB_BancoRegistros.vhd
+Note: Prueba ESCRITURA y LECTURA REG 10 en DATA 2
+Time: 30300 ps  Iteration: 0  Process: /BancoRegistros_TB_vhd/line__60  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/TB_BancoRegistros.vhd
+Failure: Simulacion Terminada
+Time: 50400 ps  Iteration: 0  Process: /BancoRegistros_TB_vhd/line__60  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/TB_BancoRegistros.vhd
+$finish called at time : 50400 ps : File "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/TB_BancoRegistros.vhd" Line 98
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 716.129 ; gain = 10.277
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'BancoRegistros_TB_vhd_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:23 . Memory (MB): peak = 716.129 ; gain = 11.836
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top testbench_for_procesador [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 28 elements ; expected 32 [C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:201]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit testbench_for_procesador in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 28 elements ; expected 32 [C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:202]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit testbench_for_procesador in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 26 elements ; expected 27 [C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:325]
+WARNING: [VRFC 10-1429] target slice is 27 elements ; value is 26 elements [C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:325]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit testbench_for_procesador in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-664] expression has 32 elements ; expected 5 [C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:448]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit testbench_for_procesador in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.BancoRegistros [bancoregistros_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb [processor_tb]
+Built simulation snapshot testbench_for_procesador_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/xsim.dir/testbench_for_procesador_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 31 15:44:50 2016...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 743.551 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_for_procesador_behav -key {Behavioral:sim_1:Functional:testbench_for_procesador} -tclbatch {testbench_for_procesador.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+ERROR: File C:\Users\LabIII-VDI9\Desktop/Program1 could not be opened
+on HDL file C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd line 41
+ERROR: [Simtcl 6-50] Simulation engine failed to start: The Simulation shut down unexpectedly during initialization.
+Please see the Tcl Console or the Messages for details.
+
+ERROR: [USF-XSim-62] 'simulate' step failed with errors. Please check the Tcl console or log files for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 743.551 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.BancoRegistros [bancoregistros_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb [processor_tb]
+Built simulation snapshot testbench_for_procesador_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/xsim.dir/testbench_for_procesador_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 31 15:45:45 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_for_procesador_behav -key {Behavioral:sim_1:Functional:testbench_for_procesador} -tclbatch {testbench_for_procesador.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source testbench_for_procesador.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_for_procesador_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 743.551 ; gain = 0.000
+add_wave {{/processor_tb/UUT/BR/reg_wr}} {{/processor_tb/UUT/BR/data_wr}} {{/processor_tb/UUT/BR/data1_rd}} {{/processor_tb/UUT/BR/data2_rd}} {{/processor_tb/UUT/BR/regs}} 
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.BancoRegistros [bancoregistros_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb [processor_tb]
+Built simulation snapshot testbench_for_procesador_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/xsim.dir/testbench_for_procesador_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 31 15:49:18 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_for_procesador_behav -key {Behavioral:sim_1:Functional:testbench_for_procesador} -tclbatch {testbench_for_procesador.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source testbench_for_procesador.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_for_procesador_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 762.875 ; gain = 0.000
+add_wave {{/processor_tb/UUT/BR/reg1_rd}} {{/processor_tb/UUT/BR/reg2_rd}} {{/processor_tb/UUT/BR/reg_wr}} {{/processor_tb/UUT/BR/data_wr}} {{/processor_tb/UUT/BR/data1_rd}} {{/processor_tb/UUT/BR/data2_rd}} {{/processor_tb/UUT/BR/regs}} 
+add_wave {{/processor_tb/UUT/Reg_ID_EX_Data1}} {{/processor_tb/UUT/Reg_ID_EX_Data2}} {{/processor_tb/UUT/Reg_ID_EX_Control_CodAlu}} {{/processor_tb/UUT/ALU_Control_Out}} {{/processor_tb/UUT/ALU_Data_1}} {{/processor_tb/UUT/ALU_Data_2}} {{/processor_tb/UUT/ALU_Result}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 us
+run 1 us
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.BancoRegistros [bancoregistros_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb [processor_tb]
+Built simulation snapshot testbench_for_procesador_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/xsim.dir/testbench_for_procesador_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 31 16:06:53 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_for_procesador_behav -key {Behavioral:sim_1:Functional:testbench_for_procesador} -tclbatch {testbench_for_procesador.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source testbench_for_procesador.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_for_procesador_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 797.332 ; gain = 0.000
+add_wave {{/processor_tb/UUT/BR/reg1_rd}} {{/processor_tb/UUT/BR/reg2_rd}} {{/processor_tb/UUT/BR/reg_wr}} {{/processor_tb/UUT/BR/data_wr}} {{/processor_tb/UUT/BR/data1_rd}} {{/processor_tb/UUT/BR/data2_rd}} {{/processor_tb/UUT/BR/regs}} 
+add_wave {{/processor_tb/UUT/Reg_ID_EX_Data1}} {{/processor_tb/UUT/Reg_ID_EX_Data2}} {{/processor_tb/UUT/ALU_Control_Out}} {{/processor_tb/UUT/ALU_Data_1}} {{/processor_tb/UUT/ALU_Data_2}} {{/processor_tb/UUT/ALU_Result}} {{/processor_tb/UUT/Flag_Zero}} 
+add_wave {{/processor_tb/UUT/Reg_MEM_WB_MemReg}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 us
+run 1 us
+ERROR: Array sizes do not match, left array has 32 elements, right array has 31 elements
+Time: 1775 ns  Iteration: 3  Process: /processor_tb/UUT/ALU
+  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd
+
+HDL Line: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:420
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.BancoRegistros [bancoregistros_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb [processor_tb]
+Built simulation snapshot testbench_for_procesador_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/xsim.dir/testbench_for_procesador_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 31 16:32:00 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_for_procesador_behav -key {Behavioral:sim_1:Functional:testbench_for_procesador} -tclbatch {testbench_for_procesador.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source testbench_for_procesador.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_for_procesador_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 826.758 ; gain = 0.000
+add_wave {{/processor_tb/UUT/BR/reg1_rd}} {{/processor_tb/UUT/BR/reg2_rd}} {{/processor_tb/UUT/BR/reg_wr}} {{/processor_tb/UUT/BR/data_wr}} {{/processor_tb/UUT/BR/data1_rd}} {{/processor_tb/UUT/BR/data2_rd}} {{/processor_tb/UUT/BR/regs}} 
+add_wave {{/processor_tb/UUT/Reg_ID_EX_Data1}} {{/processor_tb/UUT/Reg_ID_EX_Data2}} {{/processor_tb/UUT/Shift_Control}} {{/processor_tb/UUT/ALU_Control_Out}} {{/processor_tb/UUT/ALU_Data_1}} {{/processor_tb/UUT/ALU_Data_2}} {{/processor_tb/UUT/Dato_Extended_Shift}} {{/processor_tb/UUT/ALU_Result}} {{/processor_tb/UUT/Control_Shift}} {{/processor_tb/UUT/Shift_Amount}} 
+run all
+ERROR: Array sizes do not match, left array has 32 elements, right array has 31 elements
+Time: 1775 ns  Iteration: 3  Process: /processor_tb/UUT/ALU
+  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd
+
+HDL Line: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:420
+run 1 us
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 1 us
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+run 1 us
+ERROR: [Simulator 45-1] A fatal run-time error was detected.  Simulation cannot continue.
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 us
+run 1 us
+ERROR: Array sizes do not match, left array has 32 elements, right array has 31 elements
+Time: 1775 ns  Iteration: 3  Process: /processor_tb/UUT/ALU
+  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd
+
+HDL Line: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:420
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.BancoRegistros [bancoregistros_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb [processor_tb]
+Built simulation snapshot testbench_for_procesador_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/xsim.dir/testbench_for_procesador_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 31 16:57:52 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_for_procesador_behav -key {Behavioral:sim_1:Functional:testbench_for_procesador} -tclbatch {testbench_for_procesador.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source testbench_for_procesador.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_for_procesador_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 827.625 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 us
+run 1 us
+ERROR: Array sizes do not match, left array has 32 elements, right array has 31 elements
+Time: 1575 ns  Iteration: 3  Process: /processor_tb/UUT/ALU
+  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd
+
+HDL Line: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:422
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.BancoRegistros [bancoregistros_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb [processor_tb]
+Built simulation snapshot testbench_for_procesador_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/xsim.dir/testbench_for_procesador_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 31 17:00:53 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_for_procesador_behav -key {Behavioral:sim_1:Functional:testbench_for_procesador} -tclbatch {testbench_for_procesador.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source testbench_for_procesador.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 32 elements, right array has 33 elements
+Time: 125 ns  Iteration: 3  Process: /processor_tb/UUT/ALU
+  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd
+
+HDL Line: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:422
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_for_procesador_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 827.625 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 us
+ERROR: Array sizes do not match, left array has 32 elements, right array has 33 elements
+Time: 125 ns  Iteration: 3  Process: /processor_tb/UUT/ALU
+  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd
+
+HDL Line: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:422
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.BancoRegistros [bancoregistros_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb [processor_tb]
+Built simulation snapshot testbench_for_procesador_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/xsim.dir/testbench_for_procesador_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 31 17:10:15 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_for_procesador_behav -key {Behavioral:sim_1:Functional:testbench_for_procesador} -tclbatch {testbench_for_procesador.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source testbench_for_procesador.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_for_procesador_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 827.625 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 us
+run 1 us
+ERROR: Array sizes do not match, left array has 32 elements, right array has 31 elements
+Time: 1575 ns  Iteration: 3  Process: /processor_tb/UUT/ALU
+  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd
+
+HDL Line: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:422
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.BancoRegistros [bancoregistros_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb [processor_tb]
+Built simulation snapshot testbench_for_procesador_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/xsim.dir/testbench_for_procesador_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 31 17:13:10 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_for_procesador_behav -key {Behavioral:sim_1:Functional:testbench_for_procesador} -tclbatch {testbench_for_procesador.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source testbench_for_procesador.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+ERROR: Array sizes do not match, left array has 32 elements, right array has 33 elements
+Time: 125 ns  Iteration: 3  Process: /processor_tb/UUT/ALU
+  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd
+
+HDL Line: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd:422
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_for_procesador_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 827.625 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'testbench_for_procesador' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj testbench_for_procesador_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 75610f76ced747358c503a420885b3ff --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot testbench_for_procesador_behav xil_defaultlib.testbench_for_procesador -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package ieee.std_logic_signed
+Compiling package ieee.numeric_std
+Compiling package std.textio
+Compiling package ieee.std_logic_textio
+Compiling architecture behavioral of entity xil_defaultlib.BancoRegistros [bancoregistros_default]
+Compiling architecture processor_arq of entity xil_defaultlib.processor [processor_default]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture mem_arq of entity xil_defaultlib.memory [\memory(c_elf_filename="C:\\User...]
+Compiling architecture processor_tb_arq of entity xil_defaultlib.processor_tb [processor_tb]
+Built simulation snapshot testbench_for_procesador_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav/xsim.dir/testbench_for_procesador_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Tue May 31 17:13:51 2016...
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "testbench_for_procesador_behav -key {Behavioral:sim_1:Functional:testbench_for_procesador} -tclbatch {testbench_for_procesador.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+source testbench_for_procesador.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'testbench_for_procesador_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 827.625 ; gain = 0.000
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+run 1 us
+ERROR: Index 1024 out of bound 0 to 1023
+Time: 12900 ns  Iteration: 1  Process: /processor_tb/Instruction_Mem_inst/line__37
+  File: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd
+
+HDL Line: C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd:82
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 31 17:16:29 2016...

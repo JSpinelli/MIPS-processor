@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/BancoRegistros.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity BancoRegistros
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/memory.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity memory
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Juli/Downloads/ProcesadorMIPS_Compatible/ProcesadorMIPS_Compatible/Sources/processor_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity processor_tb
